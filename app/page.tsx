@@ -1,5 +1,7 @@
-import Image from "next/image";
-
 export default function Home() {
-  return <main></main>;
+  return (
+    <main>
+      <h1 className="text-7xl text-yellow-700">Mahedi Hasan</h1>
+    </main>
+  );
 }

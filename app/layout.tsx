@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Bai_Jamjuree } from "next/font/google";
 import "./globals.css";
 
-const inter = Bai_Jamjuree({
+const bai = Bai_Jamjuree({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-bai-jam-juree",
@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={bai.variable}>{children}</body>
     </html>
   );
 }
