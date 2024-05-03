@@ -20,6 +20,7 @@ const config = {
     extend: {
       fontFamily: {
         jamJuree: ["var(--font-bai-jam-juree)", "sans-serif"],
+        pixel: ["var(--font-pixel)", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -55,6 +56,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        primaryGreen: "#1395e8",
+        accentLime: "#3CB872",
+        primaryText: "#181818",
+        secondaryText: "#535353",
       },
       borderRadius: {
         lg: "var(--radius)",
