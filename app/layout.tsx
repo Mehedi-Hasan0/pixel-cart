@@ -1,11 +1,18 @@
 import type { Metadata } from "next";
-import { Bai_Jamjuree } from "next/font/google";
+import { Bai_Jamjuree, VT323 } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/shared/header/Header";
 
 const bai = Bai_Jamjuree({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
   variable: "--font-bai-jam-juree",
+});
+
+const pixel = VT323({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-pixel",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +27,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={bai.variable}>{children}</body>
+      <body className={`${bai.variable} ${pixel.variable}`}>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
