@@ -58,8 +58,10 @@ const config = {
         },
         primaryGreen: "#1395e8",
         accentLime: "#3CB872",
+        accentLightLime: "#00ff24",
         primaryText: "#181818",
         secondaryText: "#535353",
+        grayText: "#d1d1d1",
       },
       borderRadius: {
         lg: "var(--radius)",
