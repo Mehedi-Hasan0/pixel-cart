@@ -114,4 +114,7 @@ p {
   .flex-between {
     @apply flex justify-between items-center;
   }
+  .custom-transition {
+    @apply transition-all duration-300 ease-in-out;
+  }
 }
