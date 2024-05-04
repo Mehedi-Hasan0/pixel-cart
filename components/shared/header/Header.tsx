@@ -4,6 +4,8 @@ import Cart from "./Cart";
 import UserSetting from "./UserSettings";
 import { Separator } from "@/components/ui/separator";
 import MobileNavbar from "../navbar/MobileNavbar";
+import NavFooter from "../navbar/NavFooter";
+import { IoSettingsOutline } from "react-icons/io5";
 
 export default function Header() {
   return (
@@ -18,12 +20,24 @@ export default function Header() {
             orientation="vertical"
             className="h-7 lg:h-9 xl:h-12 2xl:h-16 bg-gray-500"
           />
-          <UserSetting />
+          <UserSetting>
+            <div>
+              <IoSettingsOutline
+                size={48}
+                className="w-5 lg:w-6 xl:w-8 2xl:w-9 text-white rounded-full hover:text-accentLightLime custom-transition cursor-pointer"
+              />
+            </div>
+          </UserSetting>
         </div>
       </div>
       {/* mobile nav */}
-      <div className="absolute bottom-0 left-0 z-50 py-3 main-container sm:hidden">
-        <MobileNavbar />
+      <div className="flex felx-col justify-between relative z-50 main-container w-full h-full min-w-[100vw] min-h-[100vh] sm:hidden">
+        <div className="absolute left-0 top-0 w-full main-container bg-[#053379] py-3">
+          <MobileNavbar />
+        </div>
+        <div className="absolute bottom-0 left-0 border-t border-gray-300 py-2 w-full main-container">
+          <NavFooter />
+        </div>
       </div>
     </header>
   );

@@ -12,17 +12,19 @@ import { Separator } from "@/components/ui/separator";
 import { customerAccountLinks, customerCareLink } from "@/constants";
 import Link from "next/link";
 
-export default function UserSetting() {
+/**
+ * @param {children} type children property is the trigger for the user settings slide.
+ * @returns The proper Logo with name.
+ */
+
+type IUserSettingProps = {
+  children: React.ReactNode;
+};
+
+const UserSetting: React.FC<IUserSettingProps> = ({ children }) => {
   return (
     <Sheet>
-      <SheetTrigger>
-        <div>
-          <IoSettingsOutline
-            size={48}
-            className="w-5 lg:w-6 xl:w-8 2xl:w-9 text-white rounded-full hover:text-accentLightLime custom-transition cursor-pointer"
-          />
-        </div>
-      </SheetTrigger>
+      <SheetTrigger>{children}</SheetTrigger>
       <SheetContent>
         <SheetHeader>
           <SheetTitle>
@@ -38,7 +40,7 @@ export default function UserSetting() {
             <div className="flex flex-col 2xl:gap-3">
               {/* customer links */}
               <div>
-                <h3 className="uppercase text-grayText font-bold text-[10px] lg:text-xs 2xl:text-sm mb-3 lg:mb-4 2xl:mb-6">
+                <h3 className="text-start uppercase text-grayText font-bold text-[10px] lg:text-xs 2xl:text-sm mb-3 lg:mb-4 2xl:mb-6">
                   Customer Account
                 </h3>
                 <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 2xl:gap-5">
@@ -60,7 +62,7 @@ export default function UserSetting() {
               </div>
               {/* customer care */}
               <div>
-                <h3 className="uppercase text-grayText font-bold text-[10px] lg:text-xs mb-4 2xl:mb-6">
+                <h3 className="text-start uppercase text-grayText font-bold text-[10px] lg:text-xs mb-4 2xl:mb-6">
                   Customer Care
                 </h3>
                 <div className="flex flex-col gap-2 md:gap-3 lg:gap-4 2xl:gap-5">
@@ -82,4 +84,6 @@ export default function UserSetting() {
       </SheetContent>
     </Sheet>
   );
-}
+};
+
+export default UserSetting;
