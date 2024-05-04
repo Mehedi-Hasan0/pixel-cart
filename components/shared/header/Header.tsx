@@ -9,7 +9,7 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 export default function Header() {
   return (
-    <header className=" sm:bg-[#053379]">
+    <header className=" sm:bg-[#053379] relative z-50 min-h-svh">
       {/* large device nav */}
       <div className="main-container py-2 md:py-4 lg:py-5 xl:py-6 2xl:py-8 gap-8 hidden sm:flex sm:flex-row sm:items-center sm:justify-between">
         <Logo logoSrc="/assets/icons/pixel-cart-logo.svg" />
@@ -31,14 +31,14 @@ export default function Header() {
         </div>
       </div>
       {/* mobile nav */}
-      <div className="w-full min-w-[100vw] h-full max-h-[100vh] block sm:hidden">
-        <div className="absolute left-0 top-0 w-full main-container bg-[#053379] py-3">
-          <MobileNavbar />
-        </div>
-        <div className="absolute bottom-0 left-0 border-t border-gray-300 py-2 w-full main-container">
-          <NavFooter />
-        </div>
+      {/* <div className="block sm:hidden"> */}
+      <div className="absolute left-0 top-0 w-full main-container bg-[#053379] py-3">
+        <MobileNavbar />
       </div>
+      <div className="absolute bottom-0 left-0 border-t border-gray-300 py-2 w-full main-container">
+        <NavFooter />
+      </div>
+      {/* </div> */}
     </header>
   );
 }
