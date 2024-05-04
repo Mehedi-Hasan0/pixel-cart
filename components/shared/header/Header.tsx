@@ -31,7 +31,7 @@ export default function Header() {
         </div>
       </div>
       {/* mobile nav */}
-      <div className="block sm:hidden">
+      <div className="w-full min-w-[100vw] h-full min-h-[100vh] block sm:hidden">
         <div className="absolute left-0 top-0 w-full main-container bg-[#053379] py-3">
           <MobileNavbar />
         </div>
