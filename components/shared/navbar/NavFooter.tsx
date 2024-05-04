@@ -18,10 +18,21 @@ export default function NavFooter() {
         <p className="text-xs">Messages</p>
       </Link>
       {/* cart */}
-      <Link href={"/"} className="flex flex-col items-center">
-        <IoMdCart size={28} className="text-[#7e7e7e] w-7" />
-        <p className="text-xs">Cart</p>
-      </Link>
+      <div className="relative group">
+        <div className="flex flex-col items-center">
+          <IoMdCart
+            size={30}
+            className="w-[30px] text-[#7e7e7e] rounded-full group-hover:text-accentLightLime custom-transition cursor-pointer"
+          />
+          <p className="text-xs">Cart</p>
+        </div>
+        {/* number of product inside the wishlist */}
+        <div className="absolute -top-[4px] -right-2 border-2 border-white rounded-full">
+          <p className="bg-primaryGreen w-4 h-4 rounded-full text-white flex-center justify-center text-xs">
+            3
+          </p>
+        </div>
+      </div>
       {/* account */}
       <UserSetting>
         <div className="flex flex-col items-center">

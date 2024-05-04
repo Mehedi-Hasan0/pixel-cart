@@ -31,7 +31,7 @@ export default function Header() {
         </div>
       </div>
       {/* mobile nav */}
-      <div className="flex felx-col justify-between relative z-50 main-container w-full h-full min-w-[100vw] min-h-[100vh] sm:hidden">
+      <div className="block sm:hidden">
         <div className="absolute left-0 top-0 w-full main-container bg-[#053379] py-3">
           <MobileNavbar />
         </div>
