@@ -32,10 +32,10 @@ export default function Header() {
       </div>
       {/* mobile nav */}
       {/* <div className="block sm:hidden"> */}
-      <div className="sm:hidden absolute left-0 top-0 w-full main-container bg-[#053379] py-3">
+      <div className="sm:hidden fixed left-0 top-0 w-full bg-[#053379] py-3">
         <MobileNavbar />
       </div>
-      <div className="sm:hidden fixed bottom-0 left-0 border-t border-gray-300 py-2 w-full main-container">
+      <div className="sm:hidden fixed bottom-0 left-0 border-t border-gray-300 py-2 w-full main-container bg-white">
         <NavFooter />
       </div>
       {/* </div> */}
