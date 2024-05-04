@@ -18,11 +18,11 @@ export default function NavFooter() {
         <p className="text-xs">Messages</p>
       </Link>
       {/* cart */}
-      <div className="relative group">
+      <div className="relative">
         <div className="flex flex-col items-center">
           <IoMdCart
             size={30}
-            className="w-[30px] text-[#7e7e7e] rounded-full group-hover:text-accentLightLime custom-transition cursor-pointer"
+            className="w-[30px] text-[#7e7e7e] rounded-full hover:text-primaryGreen custom-transition cursor-pointer"
           />
           <p className="text-xs">Cart</p>
         </div>
