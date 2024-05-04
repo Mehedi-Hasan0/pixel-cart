@@ -1,10 +1,22 @@
-import { MdHome } from "react-icons/md";
+import { CiSearch } from "react-icons/ci";
+import { IoIosMenu } from "react-icons/io";
+import Logo from "../header/Logo";
+import { FaHeart } from "react-icons/fa";
 
 const MobileNavbar = () => {
   return (
-    <div className="flex items-center gap-6 justify-between">
-      {/* home */}
-      <MdHome size={28} className="text-[#535353]" />
+    <div className="flex-center justify-between gap-5">
+      {/* menu btn */}
+      <div className="flex-center gap-3">
+        {/* search icon */}
+        <CiSearch size={24} className="w-6 cursor-pointer" color="#ffffff" />
+      </div>
+      {/* logo */}
+      <div className="">
+        <Logo logoSrc="/assets/icons/pixel-cart-logo.svg" />
+      </div>
+      {/* menu */}
+      <IoIosMenu size={24} className="w-6 text-white" />
     </div>
   );
 };

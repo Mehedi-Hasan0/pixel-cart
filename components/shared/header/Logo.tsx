@@ -23,10 +23,10 @@ const Logo: React.FC<ILogoProps> = ({ logoSrc, textStyle = "text-white" }) => {
           alt="logo"
           width={120}
           height={30}
-          className="w-4 md:w-5 lg:w-8 xl:w-10 2xl:w-12"
+          className="w-8 md:w-5 lg:w-8 xl:w-10 2xl:w-12"
         />
         <p
-          className={`font-pixel text-lg md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium tracking-tight ${textStyle}`}
+          className={`font-pixel text-3xl md:text-xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-medium tracking-tight ${textStyle}`}
         >
           Pixel Cart
         </p>
