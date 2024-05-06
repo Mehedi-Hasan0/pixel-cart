@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { searchBar } from "./anim";
 import { RxCross2 } from "react-icons/rx";
 import useOutsideClick from "@/hooks/useOutsideClick";
+import { hotSearch } from "@/constants";
 
 const MobileSearchbar = () => {
   // STATE //
@@ -35,7 +36,7 @@ const MobileSearchbar = () => {
         variants={searchBar}
         initial="initial"
         animate={showSearchbar ? "enter" : "exit"}
-        className={`bg-white w-full fixed shadow top-12 left-0 h-44`}
+        className={`bg-white w-full fixed shadow top-12 left-0`}
       >
         {/* search input */}
         <input
@@ -47,6 +48,21 @@ const MobileSearchbar = () => {
         />
 
         {/* recommendation */}
+        <div className="px-6 py-5 w-full flex flex-col gap-3">
+          <p className="text-xs font-bold text-secondaryText">Hot Searches:</p>
+          <div className="flex-center gap-4 w-full hide-x-scrollbar">
+            {hotSearch.map((item, idx) => (
+              <div
+                key={idx}
+                className="p-3 rounded-md bg-[#f5f5f7] hover:bg-primaryGreen custom-transition"
+              >
+                <p className="text-[11px] font-semibold text-primaryText hover:text-white custom-transition">
+                  {item}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
       </motion.div>
     </div>
   );

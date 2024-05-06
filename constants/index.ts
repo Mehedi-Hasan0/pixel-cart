@@ -39,3 +39,5 @@ export const customerCareLink = [
     link: "#",
   },
 ];
+
+export const hotSearch = ["Headphone", "Audio", "Smartphone", "Smartwatch"];
