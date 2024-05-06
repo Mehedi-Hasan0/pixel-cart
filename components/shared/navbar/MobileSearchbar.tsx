@@ -1,16 +1,27 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { motion } from "framer-motion";
 import { searchBar } from "./anim";
 import { RxCross2 } from "react-icons/rx";
+import useOutsideClick from "@/hooks/useOutsideClick";
 
 const MobileSearchbar = () => {
   // STATE //
   const [showSearchbar, setShowSearchbar] = useState(false);
+  // REF //
+  const navRef = useRef<HTMLDivElement>(null);
+
+  // search bar closing by outside click //
+  useOutsideClick(navRef, () => {
+    if (showSearchbar) {
+      setShowSearchbar(false);
+    }
+  });
+
   return (
-    <div className="">
+    <div ref={navRef} className="">
       {/* search icon */}
       <div onClick={() => setShowSearchbar((prev) => !prev)}>
         {showSearchbar ? (
