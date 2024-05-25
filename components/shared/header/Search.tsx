@@ -5,7 +5,7 @@ const Search = () => {
     <div className="text-white">
       <label
         htmlFor="search"
-        className="flex-center rounded-full bg-white px-3 md:py-1 xl:px-3 xl:py-2 2xl:px-4 2xl:py-3"
+        className="flex-center rounded-md bg-white px-3 md:py-1 xl:px-3 xl:py-2 2xl:px-4 2xl:py-3"
       >
         <CiSearch
           size={32}
