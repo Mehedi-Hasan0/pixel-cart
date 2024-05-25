@@ -17,7 +17,7 @@ const Search = () => {
           type="search"
           name=""
           id=""
-          className="px-4 lg:py-2 xl:py-1 text-primaryText 2xl:text-lg w-[180px] md:min-w-[220px] lg:min-w-[280px] xl:min-w-[380px] 2xl:min-w-[500px] border-none outline-none placeholder:text-xs xl:placeholder:text-sm 2xl:placeholder:text-base"
+          className="px-4 lg:py-1 xl:py-1 text-primaryText 2xl:text-lg w-[180px] md:min-w-[220px] lg:min-w-[280px] xl:min-w-[380px] 2xl:min-w-[500px] border-none outline-none placeholder:text-xs xl:placeholder:text-sm 2xl:placeholder:text-base"
           placeholder="Enter your keywords..."
         />
       </label>
