@@ -5,10 +5,10 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { HiOutlineMenuAlt2 } from "react-icons/hi";
 import { useState } from "react";
 import ProductShopping from "./ProductShopping";
 import BrowsingAllLinks from "./BrowsingAllLinks";
+import ShoppingOptionsMenuTitle from "./ShoppingOptionsMenuTitle";
 
 interface IShoppingOptionsNavigation {
   subMenuWidth: number;
@@ -38,55 +38,44 @@ const ShoppingOptionsNavigation: React.FC<IShoppingOptionsNavigation> = ({
     <div className="flex items-center gap-4">
       <NavigationMenu>
         <NavigationMenuList>
-          {/* TODO: make home item + product item */}
+          {/* 1st option */}
           <NavigationMenuItem>
             <NavigationMenuTrigger
               onMouseEnter={() => setHoverMenu(true)}
               onMouseLeave={() => setHoverMenu(false)}
               className="text-primaryText hover:text-primaryGreen h-12 xl:h-16 px-6 flex items-center gap-4"
             >
-              <HiOutlineMenuAlt2
-                size={20}
-                className={`w-4 xl:w-5 transition-all duration-200 ${
-                  hoverMenu ? "text-primaryGreen" : "text-primaryText"
-                }`}
+              {/* menu title/btn */}
+              <ShoppingOptionsMenuTitle
+                hoverMenu={hoverMenu}
+                isDefault={true}
+                textLabel="Browse all collection"
               />
-              <span className="relative -right-1 2xl:-right-2 uppercase font-semibold text-[10px] xl:text-sm">
-                Browse all collection
-              </span>
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-full">
               {/* content should have a fixed width */}
-              <div
-                onMouseLeave={handleDefaultActiveMenu}
-                className="min-h-[380px] flex gap-4 xl:gap-7 bg-white"
-                style={{ width: `${subMenuWidth}px` }}
-              >
-                <BrowsingAllLinks
-                  activeSubMenu={activeSubMenu}
-                  handleActiveMenu={handleActiveMenu}
-                />
-              </div>
+              <BrowsingAllLinks
+                activeSubMenu={activeSubMenu}
+                subMenuWidth={subMenuWidth}
+                handleDefaultActiveMenu={handleDefaultActiveMenu}
+                handleActiveMenu={handleActiveMenu}
+              />
             </NavigationMenuContent>
           </NavigationMenuItem>
-          {/* TODO: make home item + product item */}
+          {/* 2nd option */}
           <NavigationMenuItem>
             <NavigationMenuTrigger
               key={1}
               className="text-primaryText hover:text-primaryGreen h-12 xl:h-16 px-6 flex items-center gap-4"
             >
-              <span className="relative -right-1 2xl:-right-2 uppercase font-semibold text-[10px] xl:text-sm">
-                Products
-              </span>
+              {/* menu title/btn */}
+              <ShoppingOptionsMenuTitle
+                hoverMenu={hoverMenu}
+                textLabel="Produtcs"
+              />
             </NavigationMenuTrigger>
             <NavigationMenuContent className="w-full">
-              {/* content should have a fixed width */}
-              <div
-                className="min-h-[320px] bg-white px-8 py-8"
-                style={{ width: `${subMenuWidth}px` }}
-              >
-                <ProductShopping />
-              </div>
+              <ProductShopping subMenuWidth={subMenuWidth} />
             </NavigationMenuContent>
           </NavigationMenuItem>
         </NavigationMenuList>
