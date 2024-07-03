@@ -220,3 +220,174 @@ export const browsingLinks = [
     ],
   },
 ];
+
+export const productsData = [
+  {
+    label: "Featured",
+    product: [
+      {
+        _id: "657634856387",
+        sellerId: "662ba7aa0ffb7057c7177a0e",
+        title: "Gaming Headset With Mic For Xbox One PS4 Switch",
+        brand: "Sony",
+        price: "200",
+        quantity: "20",
+        category:
+          "Audio, Camera, Computers, Flash Deals, Game devices, Home page, Laptops, Monitor, Smart home, Smart,Phone, Smart Watch",
+        images: [
+          {
+            color: "44422994165978",
+            link: "https://vinova-ecommax.myshopify.com/cdn/shop/products/blue_160x.jpg?v=1705379314",
+          },
+          {
+            color: "44422994198746",
+            link: "https://vinova-ecommax.myshopify.com/cdn/shop/products/green_8b0b552b-ac45-4967-b04c-4e4d75e81227_160x.jpg?v=1705379314",
+          },
+        ],
+        discountedPrice: "0",
+        discountPercent: "0",
+        ratings: "0",
+        reviews: { image: [] },
+        productDetails:
+          "Bluetooth Captivate with this shirt’s versatile urban look that works as well at happy hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant appeal.",
+        specification:
+          "Bluetooth, Captivate with this shirt’s versatile urban look that works as well at happy hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant appeal.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.", // this will be coming from a rich text editor as a html to show
+        wishlist: [],
+        event: {
+          productId: [],
+          sellerId: [],
+        },
+        sku: "296542_BD-P-00004",
+        tags: "Audio, Bluetooth, Headphones, Micro, Wireless",
+        color: ["44422994165978", "44422994198746"],
+        size: null,
+      },
+    ],
+  },
+  {
+    label: "New Arrival",
+    product: [
+      {
+        _id: "657634856387",
+        sellerId: "662ba7aa0ffb7057c7177a0e",
+        title: "Gaming Headset With Mic For Xbox One PS4 Switch",
+        brand: "Sony",
+        price: "200",
+        quantity: "20",
+        category:
+          "Audio, Camera, Computers, Flash Deals, Game devices, Home page, Laptops, Monitor, Smart home, Smart,Phone, Smart Watch",
+        images: [
+          {
+            color: "44422994165978",
+            link: "https://vinova-ecommax.myshopify.com/cdn/shop/products/blue_160x.jpg?v=1705379314",
+          },
+          {
+            color: "44422994198746",
+            link: "https://vinova-ecommax.myshopify.com/cdn/shop/products/green_8b0b552b-ac45-4967-b04c-4e4d75e81227_160x.jpg?v=1705379314",
+          },
+        ],
+        discountedPrice: "0",
+        discountPercent: "0",
+        ratings: "0",
+        reviews: { image: [] },
+        productDetails:
+          "Bluetooth Captivate with this shirt’s versatile urban look that works as well at happy hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant appeal.",
+        specification:
+          "Bluetooth, Captivate with this shirt’s versatile urban look that works as well at happy hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant appeal.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.", // this will be coming from a rich text editor as a html to show
+        wishlist: [],
+        event: {
+          productId: [],
+          sellerId: [],
+        },
+        sku: "296542_BD-P-00004",
+        tags: "Audio, Bluetooth, Headphones, Micro, Wireless",
+        color: ["44422994165978", "44422994198746"],
+        size: null,
+      },
+    ],
+  },
+  {
+    label: "Top Trending",
+    product: [
+      {
+        _id: "657634856387",
+        sellerId: "662ba7aa0ffb7057c7177a0e",
+        title: "Gaming Headset With Mic For Xbox One PS4 Switch",
+        brand: "Sony",
+        price: "200",
+        quantity: "20",
+        category:
+          "Audio, Camera, Computers, Flash Deals, Game devices, Home page, Laptops, Monitor, Smart home, Smart,Phone, Smart Watch",
+        images: [
+          {
+            color: "44422994165978",
+            link: "https://vinova-ecommax.myshopify.com/cdn/shop/products/blue_160x.jpg?v=1705379314",
+          },
+          {
+            color: "44422994198746",
+            link: "https://vinova-ecommax.myshopify.com/cdn/shop/products/green_8b0b552b-ac45-4967-b04c-4e4d75e81227_160x.jpg?v=1705379314",
+          },
+        ],
+        discountedPrice: "0",
+        discountPercent: "0",
+        ratings: "0",
+        reviews: { image: [] },
+        productDetails:
+          "Bluetooth Captivate with this shirt’s versatile urban look that works as well at happy hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant appeal.",
+        specification:
+          "Bluetooth, Captivate with this shirt’s versatile urban look that works as well at happy hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant appeal.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.", // this will be coming from a rich text editor as a html to show
+        wishlist: [],
+        event: {
+          productId: [],
+          sellerId: [],
+        },
+        sku: "296542_BD-P-00004",
+        tags: "Audio, Bluetooth, Headphones, Micro, Wireless",
+        color: ["44422994165978", "44422994198746"],
+        size: null,
+      },
+    ],
+  },
+  {
+    label: "Best Selling",
+    product: [
+      {
+        _id: "657634856387",
+        sellerId: "662ba7aa0ffb7057c7177a0e",
+        title: "Gaming Headset With Mic For Xbox One PS4 Switch",
+        brand: "Sony",
+        price: "200",
+        quantity: "20",
+        category:
+          "Audio, Camera, Computers, Flash Deals, Game devices, Home page, Laptops, Monitor, Smart home, Smart,Phone, Smart Watch",
+        images: [
+          {
+            color: "44422994165978",
+            link: "https://vinova-ecommax.myshopify.com/cdn/shop/products/blue_160x.jpg?v=1705379314",
+          },
+          {
+            color: "44422994198746",
+            link: "https://vinova-ecommax.myshopify.com/cdn/shop/products/green_8b0b552b-ac45-4967-b04c-4e4d75e81227_160x.jpg?v=1705379314",
+          },
+        ],
+        discountedPrice: "0",
+        discountPercent: "0",
+        ratings: "0",
+        reviews: { image: [] },
+        productDetails:
+          "Bluetooth Captivate with this shirt’s versatile urban look that works as well at happy hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant appeal.",
+        specification:
+          "Bluetooth, Captivate with this shirt’s versatile urban look that works as well at happy hour as it does in the back yard. The real mother of pearl buttons and embroidered crocodile complete its elegant appeal.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridicu lus mus. Donec quam felis, ultri cies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.", // this will be coming from a rich text editor as a html to show
+        wishlist: [],
+        event: {
+          productId: [],
+          sellerId: [],
+        },
+        sku: "296542_BD-P-00004",
+        tags: "Audio, Bluetooth, Headphones, Micro, Wireless",
+        color: ["44422994165978", "44422994198746"],
+        size: null,
+      },
+    ],
+  },
+];
