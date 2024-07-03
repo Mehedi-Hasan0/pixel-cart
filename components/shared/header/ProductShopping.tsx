@@ -15,7 +15,7 @@ const ProductShopping: React.FC<IProductShoppingProps> = ({ subMenuWidth }) => {
       style={{ width: `${subMenuWidth}px` }}
     >
       {/* ☝️ content should have a fixed width */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 xl:gap-7 justify-items-center">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-8 lg:gap-y-0 xl:gap-7 justify-items-center 2xl:max-w-screen-lg 2xl:mx-auto">
         {/* TODO: Here will be a skeleton loading ui */}
         {loading ? (
           <ShoppingMenuProductLoader />

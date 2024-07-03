@@ -9,6 +9,7 @@ import { useState } from "react";
 import ProductShopping from "./ProductShopping";
 import BrowsingAllLinks from "./BrowsingAllLinks";
 import ShoppingOptionsMenuTitle from "./ShoppingOptionsMenuTitle";
+import MenuExtraOptions from "./MenuExtraOptions";
 
 interface IShoppingOptionsNavigation {
   subMenuWidth: number;
@@ -35,7 +36,8 @@ const ShoppingOptionsNavigation: React.FC<IShoppingOptionsNavigation> = ({
   };
 
   return (
-    <div className="flex items-center gap-4">
+    <div className="flex items-center justify-between gap-4">
+      {/* left side browsing menu */}
       <NavigationMenu>
         <NavigationMenuList>
           {/* 1st option */}
@@ -43,7 +45,7 @@ const ShoppingOptionsNavigation: React.FC<IShoppingOptionsNavigation> = ({
             <NavigationMenuTrigger
               onMouseEnter={() => setHoverMenu(true)}
               onMouseLeave={() => setHoverMenu(false)}
-              className="text-primaryText hover:text-primaryGreen h-12 xl:h-16 px-6 flex items-center gap-4"
+              className="text-primaryText hover:text-primaryGreen h-12 xl:h-16 px-4 md:px-6 flex items-center gap-4"
             >
               {/* menu title/btn */}
               <ShoppingOptionsMenuTitle
@@ -66,7 +68,7 @@ const ShoppingOptionsNavigation: React.FC<IShoppingOptionsNavigation> = ({
           <NavigationMenuItem>
             <NavigationMenuTrigger
               key={1}
-              className="text-primaryText hover:text-primaryGreen h-12 xl:h-16 px-6 flex items-center gap-4"
+              className="text-primaryText hover:text-primaryGreen h-12 xl:h-16 px-4 md:px-6 flex items-center gap-4"
             >
               {/* menu title/btn */}
               <ShoppingOptionsMenuTitle
@@ -80,6 +82,9 @@ const ShoppingOptionsNavigation: React.FC<IShoppingOptionsNavigation> = ({
           </NavigationMenuItem>
         </NavigationMenuList>
       </NavigationMenu>
+
+      {/* right side extra options */}
+      <MenuExtraOptions />
     </div>
   );
 };
