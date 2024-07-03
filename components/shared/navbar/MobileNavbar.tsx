@@ -1,11 +1,11 @@
-import { CiSearch } from "react-icons/ci";
 import { IoIosMenu } from "react-icons/io";
 import Logo from "../header/Logo";
 import MobileSearchbar from "./MobileSearchbar";
+import MobileCategoryMenu from "../header/MobileCategoryMenu";
 
 const MobileNavbar = () => {
   return (
-    <div className="flex-center justify-between gap-5 relative main-container">
+    <div className="flex-center justify-between items-center gap-5 relative main-container">
       <MobileSearchbar />
       {/* logo */}
       <div>
@@ -13,7 +13,9 @@ const MobileNavbar = () => {
       </div>
       <div>
         {/* menu */}
-        <IoIosMenu size={24} className="w-6 text-white" />
+        <MobileCategoryMenu>
+          <IoIosMenu size={24} className="w-7 -mb-2 text-white" />
+        </MobileCategoryMenu>
       </div>
     </div>
   );
