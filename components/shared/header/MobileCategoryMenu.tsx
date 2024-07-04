@@ -8,9 +8,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import Logo from "./Logo";
-import { Separator } from "@/components/ui/separator";
-import { customerAccountLinks, customerCareLink } from "@/constants";
 import Link from "next/link";
 import { browsingLinks } from "@/data";
 import { useState } from "react";
@@ -30,21 +27,12 @@ const MobileCategoryMenu: React.FC<IMobileCategoryMenuProps> = ({
   children,
 }) => {
   // STATE //
-  const [hoverMenu, setHoverMenu] = useState<boolean>(false);
   // for active sub menu
   const [activeSubMenu, setActiveSubMenu] = useState<number | null>(null);
-  const [isSheetOpen, setIsSheetOpen] = useState<boolean>(false);
 
   // LOGIC //
   const handleActiveMenu = (idx: number) => {
     setActiveSubMenu(idx);
-  };
-
-  // Because we are giving an exit animation of 300 ms for the navigation content that's why we are setting the index to 0 using setTimout with 300ms delay.
-  const handleDefaultActiveMenu = () => {
-    setTimeout(() => {
-      setActiveSubMenu(0);
-    }, 300);
   };
 
   const handleSheetClose = () => {
@@ -54,7 +42,6 @@ const MobileCategoryMenu: React.FC<IMobileCategoryMenuProps> = ({
   return (
     <Sheet
       onOpenChange={(open) => {
-        setIsSheetOpen(open);
         if (!open) handleSheetClose();
       }}
     >

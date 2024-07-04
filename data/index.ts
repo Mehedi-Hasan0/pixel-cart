@@ -391,3 +391,26 @@ export const productsData = [
     ],
   },
 ];
+
+export const bannerData = {
+  primary: [
+    {
+      title: "Gaming Computer",
+      desc: "Intel i9 14900kf/ vga rtx 4070 ti",
+      price: "1400",
+      img: "/assets/images/banner/b-1.webp",
+    },
+    {
+      title: "HDR smart tv",
+      desc: "Quantum hdr+",
+      price: "1920",
+      img: "/assets/images/banner/b-2.webp",
+    },
+    {
+      title: "Homepod pro",
+      desc: "Bluetooth speaker",
+      price: "199",
+      img: "/assets/images/banner/b-3.webp",
+    },
+  ],
+};
